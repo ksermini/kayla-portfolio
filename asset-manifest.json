@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kayla-portfolio/static/css/main.f855e6bc.css",
+    "main.js": "/kayla-portfolio/static/js/main.1a9b4160.js",
+    "static/js/453.d695051e.chunk.js": "/kayla-portfolio/static/js/453.d695051e.chunk.js",
+    "static/media/kayla.png": "/kayla-portfolio/static/media/kayla.5022cbfcac0377778fec.png",
+    "index.html": "/kayla-portfolio/index.html",
+    "main.f855e6bc.css.map": "/kayla-portfolio/static/css/main.f855e6bc.css.map",
+    "main.1a9b4160.js.map": "/kayla-portfolio/static/js/main.1a9b4160.js.map",
+    "453.d695051e.chunk.js.map": "/kayla-portfolio/static/js/453.d695051e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.1a9b4160.js"
+  ]
+}
