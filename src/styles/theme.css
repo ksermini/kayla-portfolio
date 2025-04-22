@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --font-body: 'Inter', 'SF Pro', 'Helvetica Neue', sans-serif;
     --color-bg: #f9f9f9;

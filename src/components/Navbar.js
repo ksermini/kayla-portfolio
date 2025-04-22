@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+function Navbar() {
   return (
-    <nav className="navbar">
-      <ul>
+    <nav className="flex justify-between items-center p-4 shadow">
+      <div className="font-bold text-lg">Kayla</div>
+      <ul className="flex gap-4">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/projects">Projects</Link></li>
@@ -13,3 +15,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;
