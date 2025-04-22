@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kayla-portfolio/static/css/main.a2c3601c.css",
-    "main.js": "/kayla-portfolio/static/js/main.7631d1a3.js",
+    "main.css": "/kayla-portfolio/static/css/main.60eb8625.css",
+    "main.js": "/kayla-portfolio/static/js/main.812ac857.js",
     "static/js/453.d695051e.chunk.js": "/kayla-portfolio/static/js/453.d695051e.chunk.js",
     "static/media/kayla.png": "/kayla-portfolio/static/media/kayla.5022cbfcac0377778fec.png",
     "index.html": "/kayla-portfolio/index.html",
-    "main.a2c3601c.css.map": "/kayla-portfolio/static/css/main.a2c3601c.css.map",
-    "main.7631d1a3.js.map": "/kayla-portfolio/static/js/main.7631d1a3.js.map",
+    "main.60eb8625.css.map": "/kayla-portfolio/static/css/main.60eb8625.css.map",
+    "main.812ac857.js.map": "/kayla-portfolio/static/js/main.812ac857.js.map",
     "453.d695051e.chunk.js.map": "/kayla-portfolio/static/js/453.d695051e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2c3601c.css",
-    "static/js/main.7631d1a3.js"
+    "static/css/main.60eb8625.css",
+    "static/js/main.812ac857.js"
   ]
 }
