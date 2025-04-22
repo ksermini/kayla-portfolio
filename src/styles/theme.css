@@ -1,0 +1,16 @@
+:root {
+    --font-body: 'Inter', 'SF Pro', 'Helvetica Neue', sans-serif;
+    --color-bg: #f9f9f9;
+    --color-text: #1a1a1a;
+    --color-accent: #007aff;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+  }
+  
