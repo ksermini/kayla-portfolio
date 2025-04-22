@@ -1,84 +1,100 @@
 // src/components/Hero.js
-import React, { useState } from "react";
-import profile from "../assets/kayla.png";
-import "../index.css"; // or your Hero-specific CSS
 
-const topics = [
-  {
-    title: "CI/CD: Why consistency beats chaos",
-    blurb: "From semantic versioning to Azure DevOps, I’ve built pipelines that don’t just deploy code — they build confidence.",
-    full: "I introduced CI/CD pipelines across 5 stacks, integrating semantic versioning, automated testing, and branching strategies. It cut release delays and empowered teams to ship reliably without firefighting. CI/CD isn't just automation — it's discipline at scale.",
-    tech: ["Azure DevOps", "PowerShell", "Python"],
-  },
-  {
-    title: "Low Code / No Code: Scaling without hand-coding",
-    blurb: "I architected a low-code ETL framework that eliminated repetitive scripting while keeping full flexibility.",
-    full: "With metadata-driven YAML configs, dynamic class loading, and modular validation rules, my framework lets teams onboard sources without touching the core logic. No more copy-paste engineering. Just pure speed, clarity, and reusability.",
-    tech: ["Python", "YAML", "SQLAlchemy"],
-  },
-  {
-    title: "PowerShell: My unlikely favorite tool",
-    blurb: "It's not flashy, but it gets the job done. PowerShell became my go-to for CI/CD scripting and automation.",
-    full: "I used PowerShell to script semantic versioning, automate deployments, and set up dynamic handshakes between systems. It’s a perfect example of choosing the right tool for the job — simple, scriptable, powerful.",
-    tech: ["PowerShell", "GitHub Actions"],
-  },
-  {
-    title: "SDLC: The system that runs the system",
-    blurb: "I live and breathe clean architecture — because clean processes produce clean code.",
-    full: "I standardize SDLC practices across teams by embedding documentation-first thinking, branch strategies, and peer reviews. I love the clarity of a defined process and how it brings teams together toward consistent quality.",
-    tech: ["Confluence", "Git", "Jira"],
-  },
-];
+import React, { useState } from "react";
+import kayla from "../assets/kayla.png";
 
 export default function Hero() {
   const [expanded, setExpanded] = useState(null);
 
+  const topics = [
+    {
+      title: "CI/CD: Why consistency beats chaos",
+      blurb:
+        "From semantic versioning to Azure DevOps, I’ve built pipelines that don’t just deploy code — they build confidence.",
+      tags: ["Azure DevOps", "PowerShell", "Python"],
+    },
+    {
+      title: "Low Code / No Code: Scaling without hand-coding",
+      blurb:
+        "I architected a low-code ETL framework that eliminated repetitive scripting while keeping full flexibility.",
+      tags: ["Python", "YAML", "SQLAlchemy"],
+    },
+    {
+      title: "PowerShell: My unlikely favorite tool",
+      blurb:
+        "It's not flashy, but it gets the job done. PowerShell became my go-to for CI/CD scripting and automation.",
+      tags: ["PowerShell", "GitHub Actions"],
+    },
+    {
+      title: "SDLC: The system that runs the system",
+      blurb:
+        "I live and breathe clean architecture — because clean processes produce clean code.",
+      tags: ["Confluence", "Git", "Jira"],
+    },
+    {
+      title: "Mentorship & Culture: Why I Lead by Example",
+      blurb:
+        "As a former team captain, I bring competitive energy into every dev room. Culture isn't extra — it's the foundation.",
+      tags: ["Leadership", "Culture", "Mentorship"],
+    },
+    {
+      title: "Designing for Tim in Treasury",
+      blurb:
+        "If you don’t know what Tim waits an hour for every morning, how do you build something useful? I care about real pain points.",
+      tags: ["User Empathy", "Systems Thinking", "Business Context"],
+    },
+  ];
+
   return (
-    <section className="hero-wrapper">
+    <div className="hero-wrapper">
       <div className="hero-intro">
         <div className="hero-left">
-          <h1>I’m Kayla — a systems-focused data engineer</h1>
-          <p>
-            I build modular ETL frameworks, lead CI/CD transformations, and
-            design human-first DevOps systems.
+          <h1 className="hero-title">Building clean, scalable data systems</h1>
+          <p className="hero-tagline">
+            Modular ETL. Dynamic CI/CD. Obsessed with SDLC excellence.
           </p>
-          <p className="hero-sub">
-            Currently scaling a low-code ETL engine, building a Monte Carlo pricing model in C++, and refining cloud pipelines.
-          </p>
+          <a href="#projects" className="hero-btn">
+            View Projects
+          </a>
         </div>
         <div className="hero-right">
-          <img src={profile} alt="Kayla Sermini" className="hero-image" />
+          <img src={kayla} alt="Kayla Sermini" className="hero-avatar" />
         </div>
       </div>
+      {/* <div className="hero-wrapper">
+        <img src={kayla} alt="Kayla Sermini" className="hero-avatar-centered" />
+        <h1 className="hero-title">Building clean, scalable data systems</h1>
+        <p className="hero-tagline">
+            Modular ETL. Dynamic CI/CD. Obsessed with SDLC excellence.
+        </p>
+        <a href="#projects" className="hero-btn">View Projects</a>
+      </div> */}
+
 
       <div className="topics-section">
-        <h2>🧠 Current Topics</h2>
+        <h2>What I Talk About</h2>
         <div className="topics-grid">
-          {topics.map((topic, index) => (
-            <div
-              key={index}
-              className={`topic-card ${expanded === index ? "expanded" : ""}`}
-              onClick={() => setExpanded(expanded === index ? null : index)}
-            >
-              <div className="topic-front">
-                <h3>{topic.title}</h3>
-                <p>{topic.blurb}</p>
-                <div className="tags">
-                  {topic.tech.map((tag) => (
-                    <span className="tag" key={tag}>{tag}</span>
-                  ))}
-                </div>
-                <button className="read-btn">Read More</button>
+          {topics.map((topic, idx) => (
+            <div className="topic-card" key={idx}>
+              <h3>{topic.title}</h3>
+              <p>{topic.blurb}</p>
+              <div className="tags">
+                {topic.tags.map((tag, i) => (
+                  <span className="tag" key={i}>
+                    {tag}
+                  </span>
+                ))}
               </div>
-              {expanded === index && (
-                <div className="topic-back">
-                  <p>{topic.full}</p>
-                </div>
-              )}
+              <button
+                className="read-btn"
+                onClick={() => alert(`Coming soon: ${topic.title}`)}
+              >
+                Read More
+              </button>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

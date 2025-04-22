@@ -317,3 +317,122 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+.hero-avatar-centered {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.tech-tag {
+  background: #eee;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  color: #333;
+}
+.building-list li {
+  margin-bottom: 1.25rem;
+}
+.building-list li strong {
+  font-weight: 600;
+}
+
+.milestone-section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.milestone-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #111;
+}
+
+/* Track */
+.milestone-track {
+  display: flex;
+  overflow-x: auto;
+  padding: 1.5rem 1rem 2rem;
+  gap: 3rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* hide scrollbar */
+}
+
+.milestone-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Single Milestone */
+.milestone {
+  flex-shrink: 0;
+  min-width: 200px;
+  scroll-snap-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+}
+.milestone-track::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ccc, #eee);
+  z-index: 0;
+}
+
+.milestone:hover {
+  transform: translateY(-4px);
+}
+
+/* Circle Dot */
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #111;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Milestone Text */
+.milestone p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+  max-width: 160px;
+  line-height: 1.5;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background: #f9f9f9;
+}
+.footer-links a {
+  margin: 0 0.75rem;
+  color: #000;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #007acc;
+}
