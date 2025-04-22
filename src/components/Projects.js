@@ -1,35 +1,64 @@
-import '../App.css';
+import React from 'react';
+import '../index.css';
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "Monte Carlo Option Pricing Engine",
-      description: "High-performance C++ simulation engine using design patterns and threading.",
-      link: "https://github.com/ksermini/MonteCarlo"
-    },
-    {
-      title: "Crypto Trade Alerts",
-      description: "Real-time crypto strategy monitor using Python, SQLite, and sentiment analysis.",
-      link: "https://github.com/ksermini/crypto_trade_alerts"
-    },
-    {
-      title: "Budget Management App",
-      description: "Flask-based dashboard with real-time Socket IO, personal budgeting tracker.",
-      link: "https://github.com/ksermini/Budget-management-"
-    }
-  ];
-
   return (
-    <section className="projects container">
-      <h2>Featured Projects</h2>
-      <div className="project-grid">
-        {projects.map((project, i) => (
-          <div className="card" key={i}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    <section className="projects-grid">
+      {/* Left Column */}
+      <div className="left-column">
+        {/* Featured Projects */}
+        <div className="featured-projects">
+          <h2>Featured Projects</h2>
+          <div className="card">
+            <h3>Monte Carlo Option Pricing Engine</h3>
+            <p>
+              High-performance C++ simulation engine using design patterns and threading.
+            </p>
+            <a href="https://github.com/ksermini/MonteCarlo" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
           </div>
-        ))}
+        </div>
+
+        {/* Document-First Engineering */}
+        <div className="document-engineering">
+          <h3>📘 Document-First Engineering</h3>
+          <p>
+            The Monte Carlo Option Pricing Engine was designed using Software Development Documentation (SDD) from day one.
+          </p>
+          <p style={{ marginTop: '0.5rem', fontStyle: 'italic', fontSize: '0.9rem' }}>
+            “Code is temporary. Documentation is forever.”
+          </p>
+          <a href="/docs/Monte_Carlo(SDD).docx" target="_blank" rel="noopener noreferrer">
+            <img
+                src="/docs/montecarlo-preview.png"
+                alt="Monte Carlo SDD Preview"
+                className="doc-preview"
+            />
+            </a>
+        </div>
+      </div>
+
+      {/* Right Column */}
+      <div className="right-column">
+        <div className="card">
+          <h3>Crypto Trade Alerts</h3>
+          <p>
+            Real-time crypto strategy monitor using Python, SQLite, and sentiment analysis.
+          </p>
+          <a href="https://github.com/ksermini/crypto_trade_alerts" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </a>
+        </div>
+        <div className="card">
+          <h3>Budget Management App</h3>
+          <p>
+            Flask-based dashboard with real-time Socket IO, personal budgeting tracker.
+          </p>
+          <a href="https://github.com/ksermini/Budget-management-" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </a>
+        </div>
       </div>
     </section>
   );
