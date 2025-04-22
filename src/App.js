@@ -1,13 +1,13 @@
 // src/App.js
 
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Resume from "./components/Resume"; // Note: capital "R"
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 
 function App() {

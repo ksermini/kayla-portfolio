@@ -2,165 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Kayla Sermini — Data Engineer Portfolio showcasing modular ETL pipelines, CI/CD systems, and scalable architecture."
+    />
     <title>Kayla Sermini — Portfolio</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles/main.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <style>
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: #fff;
-        border-bottom: 1px solid #eee;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-
-      nav .logo {
-        font-weight: 600;
-        font-size: 1.25rem;
-      }
-
-      nav ul {
-        display: flex;
-        gap: 1.5rem;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-      }
-
-      nav ul li a:hover {
-        color: #007acc;
-      }
-
-      @media (max-width: 768px) {
-        nav {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        nav ul {
-          flex-direction: column;
-          gap: 0.75rem;
-          margin-top: 0.5rem;
-        }
-      }
-    </style>
   </head>
-
   <body>
-    <!-- ✨ Navigation Bar -->
-    <nav>
-      <div class="logo">Kayla</div>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="Data_Engineer_Sermini_Kayla.pdf" download>Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- ✨ Hero Section -->
-    <header>
-      <div class="container hero">
-        <img src="kayla.png" alt="Kayla Sermini" class="profile-pic" />
-        <h1>Building clean, scalable data systems</h1>
-        <p class="tagline">Modular ETL. Dynamic CI/CD. Obsessed with SDLC excellence.</p>
-        <a href="#projects" class="btn">View Projects</a>
-      </div>
-    </header>
-
-    <main>
-      <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        <div class="projects">
-          <div class="card">
-            <h3>Monte Carlo Option Pricing Engine</h3>
-            <p>High-performance simulation engine in C++ using design patterns and threading. Built to showcase quant finance engineering.</p>
-            <a href="https://github.com/ksermini/MonteCarlo" target="_blank" rel="noopener noreferrer">
-              View on GitHub
-            </a>            
-          </div>
-          <div class="card">
-            <h3>Crypto Trade Alerts</h3>
-            <p>Real-time crypto strategy monitor and alerting system with custom indicators and dashboard integration.</p>
-            <a href="https://github.com/ksermini/crypto_trade_alerts" target="_blank" rel="noopener noreferrer">
-              View on GitHub
-            </a>
-          </div>
-          <div class="card">
-            <h3>Budget Management App</h3>
-            <p>Flask-based personal budgeting app with dashboards, Socket.IO updates, and SQLAlchemy backend.</p>
-            <a href="https://github.com/ksermini/Budget-management-" target="_blank" rel="noopener noreferrer">
-              View on GitHub
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Updated About Section with Icons and Scroll Animation -->
-      <section id="about" class="container about-section">
-        <h2>About Me</h2>
-      
-        <div class="icon-grid">
-          <div class="icon-card">
-            <img src="assets/icons/architecture.ico" alt="SOLID Architecture">
-            <span>SOLID<br>Architecture</span>
-          </div>
-          <div class="icon-card">
-            <img src="assets/icons/ETL.ico" alt="Modular ETL">
-            <span>Modular<br>ETL</span>
-          </div>
-          <div class="icon-card">
-            <img src="assets/icons/CICD.ico" alt="CI/CD Pipelines">
-            <span>CI/CD<br>Pipelines</span>
-          </div>
-          <div class="icon-card">
-            <img src="assets/icons/SOLID.ico" alt="Systems Thinking">
-            <span>Systems<br>Thinking</span>
-          </div>
-          <div class="icon-card">
-            <img src="assets/icons/clean_code.ico" alt="Clean Code">
-            <span>Clean<br>Code</span>
-          </div>
-          <div class="icon-card">
-            <img src="assets/icons/collab.ico" alt="Collaboration">
-            <span>Collaboration</span>
-          </div>
-        </div>
-      
-        <div class="about-description">
-          <p>
-            I'm Kayla — a data engineer with a sports background, a love for learning, and a competitive spirit. I designed a metadata-driven, low-code ETL framework from scratch, standardized CI/CD across 5 tech stacks, and lead SDLC efforts with Azure DevOps. I’m passionate about teaching, scaling clean systems, and making tech “popular” again. Let’s connect.
-          </p>
-      
-          <a href="assets/Data_Engineer_Sermini_Kayla.pdf" download class="btn">Download My Resume</a>
-        </div>
-      </section>
-      
-
-      
-
-    </main>
-
-    <footer>
-      <p>© Kayla Sermini. Built with care and clean code.</p>
-    </footer>
-    <script>
-      ScrollReveal().reveal(".hero", { delay: 200, duration: 1000, distance: "20px", origin: "bottom" });
-      ScrollReveal().reveal(".projects", { delay: 300, duration: 1000, distance: "20px", origin: "left" });
-      ScrollReveal().reveal(".about-visual", { delay: 300, duration: 1000, distance: "20px", origin: "right" });
-    </script>
-    
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
   </body>
 </html>
