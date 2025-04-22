@@ -85,7 +85,7 @@ const milestones = [
 export default function MilestoneTimeline() {
   return (
     <section className="timeline-wrapper">
-      <h2 className="timeline-title">📍 How I Got Here</h2>
+      <h2 className="timeline-title">Steps That Brought Me Here <span className="hint">(Hint: SOLID Ones)</span></h2>
       <div className="timeline-scroll">
         {milestones.map((m, i) => (
           <div

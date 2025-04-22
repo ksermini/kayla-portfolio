@@ -1,6 +1,7 @@
 // src/pages/Home.js
 import React from "react";
 import Hero from "../components/Hero";
+import LandingTopics from "../components/LandingTopics";
 import Skills from "../components/Skills";
 import AboutPreview from "../components/AboutPreview";
 import CurrentlyBuilding from "../components/CurrentlyBuilding";
@@ -15,6 +16,8 @@ export default function Home() {
       <AboutPreview />
       <CurrentlyBuilding />
       <Timeline />
+      <LandingTopics />
+      
       <Footer />
     </>
   );

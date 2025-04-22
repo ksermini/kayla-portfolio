@@ -1,24 +1,23 @@
-// src/components/CurrentlyBuilding.js
-import React from "react";
-
-const projects = [
-  { title: "Monte Carlo Option Pricing Engine", tech: "C++", detail: "Threaded and designed using clean architecture" },
-  { title: "Portfolio Refresh", tech: "React", detail: "Landing experience + modular structure" },
-  { title: "Exploring Quant Strategies", tech: "Python", detail: "Momentum signals, backtesting, and ML" }
-];
-
+// CurrentlyBuilding.js
 export default function CurrentlyBuilding() {
-  return (
-    <section className="container">
-      <h2>Currently Building</h2>
-      <ul className="building-list">
-        {projects.map((item) => (
-          <li key={item.title}>
-            <strong>{item.title} ({item.tech})</strong>
-            <p>{item.detail}</p>
+    return (
+      <section className="section-container currently-building">
+        <h2>Currently Building</h2>
+        <ul>
+          <li>
+            <h4>Monte Carlo Option Pricing Engine (C++)</h4>
+            <p>Threaded and designed using clean architecture</p>
           </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
+          <li>
+            <h4>Portfolio Refresh (React)</h4>
+            <p>Landing experience + modular structure</p>
+          </li>
+          <li>
+            <h4>Exploring Quant Strategies (Python)</h4>
+            <p>Momentum signals, backtesting, and ML</p>
+          </li>
+        </ul>
+      </section>
+    );
+  }
+  

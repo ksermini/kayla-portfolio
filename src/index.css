@@ -162,9 +162,24 @@ nav ul li a:hover {
 
 .topics-grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* force 3 columns */
+  gap: 3rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
 }
+
+@media (max-width: 1024px) {
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 640px) {
+  .topics-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+}
+
 
 .topic-card {
   background: #f9f9f9;
