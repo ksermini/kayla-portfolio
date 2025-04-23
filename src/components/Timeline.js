@@ -28,7 +28,9 @@ const milestones = [
     icon: "🔐",
     title: "Got a pentesting cert because chaos is a valid career path",
     description:
-      "“You won’t be coding much here,” they said. I took that personally and automated everything in sight.",
+      "“I didn’t get a pentesting cert just for the title. I wanted to understand how systems work from the ground up. While studying, I got hands-on with network scanning, explored tools like Burp Suite, and saw how Python could be used in new ways for automation and testing.
+
+This experience taught me how to look at infrastructure through a security lens and helped me connect the dots between code, networks, and real-world vulnerabilities.",
     gradient: "linear-gradient(135deg, #fef9c3, #d1fae5)"
   },
   {
