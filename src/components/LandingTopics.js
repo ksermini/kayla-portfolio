@@ -5,7 +5,7 @@ export default function LandingTopics() {
     {
       title: "CI/CD: Why consistency beats chaos",
       blurb:
-        "From semantic versioning to Azure DevOps, I’ve built pipelines that don’t just deploy code — they build confidence.",
+        "From automatic semantic versioning to Azure DevOps, I’ve built pipelines that don’t just deploy code — they build confidence.",
       tags: ["Azure DevOps", "PowerShell", "Python"],
     },
     {
@@ -18,18 +18,18 @@ export default function LandingTopics() {
       title: "PowerShell: My unlikely favorite tool",
       blurb:
         "It's not flashy, but it gets the job done. PowerShell became my go-to for CI/CD scripting and automation.",
-      tags: ["PowerShell", "GitHub Actions"],
+      tags: ["PowerShell", "CI CD"],
     },
     {
       title: "SDLC: The system that runs the system",
       blurb:
-        "I live and breathe clean architecture — because clean processes produce clean code.",
-      tags: ["Confluence", "Git", "Jira"],
+        "I live and breathe clean architecture, because clean processes produce clean code.",
+      tags: ["Confluence", "Git", "Lucid"],
     },
     {
       title: "Mentorship & Culture: Why I Lead by Example",
       blurb:
-        "As a former team captain, I bring competitive energy into every dev room. Culture isn't extra — it's the foundation.",
+        "As a former team captain, I bring competitive energy into every dev room. Culture isn't extra, it's the foundation.",
       tags: ["Leadership", "Culture", "Mentorship"],
     },
     {

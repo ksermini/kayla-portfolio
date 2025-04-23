@@ -1,7 +1,7 @@
 // src/components/Skills.js
 import React from "react";
 
-const skills = ["Python", "C++", "PowerShell", "SQLAlchemy", "Azure", "GitHub Actions", "Confluence", "Jira"];
+const skills = ["Python", "C++", "PowerShell","CI/CD", "SQL", "Azure", "SDLC", "Confluence", "Java","Solution Designing"];
 
 export default function Skills() {
   return (

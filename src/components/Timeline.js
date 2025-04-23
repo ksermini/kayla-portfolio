@@ -12,7 +12,7 @@ const milestones = [
   },
   {
     icon: "🎮",
-    title: "Tried to dodge tech — accepted my fate instead",
+    title: "Tried to dodge tech -> accepted my fate instead",
     description:
       "After years of resisting the family legacy, I finally gave in. Turns out, inheritance isn’t just a C++ keyword.",
     gradient: "linear-gradient(135deg, #fce7f3, #e0f2fe)"
@@ -28,9 +28,7 @@ const milestones = [
     icon: "🔐",
     title: "Got a pentesting cert because chaos is a valid career path",
     description:
-      "“I didn’t get a pentesting cert just for the title. I wanted to understand how systems work from the ground up. While studying, I got hands-on with network scanning, explored tools like Burp Suite, and saw how Python could be used in new ways for automation and testing.
-
-This experience taught me how to look at infrastructure through a security lens and helped me connect the dots between code, networks, and real-world vulnerabilities.",
+      "I didn’t get the cert just for a title. I wanted to understand how systems work from the ground up. This taught me how to look at infrastructure through a security lens and connected the dots between code, networks, and real-world vulnerabilities.",
     gradient: "linear-gradient(135deg, #fef9c3, #d1fae5)"
   },
   {

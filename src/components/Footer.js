@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-links">
         <a href="https://github.com/ksermini" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/ksermini" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:your-email@example.com">Email</a>
+        <a href="mailto:kaylasermini@yahoo.com">Email</a>
       </div>
     </footer>
   );
