@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../index.css';
 
 export default function Projects() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <section className="projects-grid">
       {/* Left Column */}
@@ -29,13 +34,7 @@ export default function Projects() {
           <p style={{ marginTop: '0.5rem', fontStyle: 'italic', fontSize: '0.9rem' }}>
             “Code is temporary. Documentation is forever.”
           </p>
-          <a href="/docs/Monte_Carlo(SDD).docx" target="_blank" rel="noopener noreferrer">
-            <img
-                src="/docs/montecarlo-preview.png"
-                alt="Monte Carlo SDD Preview"
-                className="doc-preview"
-            />
-            </a>
+          <a href="/docs/Monte_Carlo(SDD).docx"download className="btn">Download My SDD</a>
         </div>
       </div>
 
@@ -60,6 +59,18 @@ export default function Projects() {
           </a>
         </div>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              &times;
+            </button>
+            <a href="/docs/Monte_Carlo(SDD).docx"download className="btn">Download My SDD</a>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
