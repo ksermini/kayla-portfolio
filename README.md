@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Kayla's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the code behind my personal portfolio site. It’s where I showcase my work—but also how I think as a developer. I didn’t just want it to *look* clean; I built it to be fast, accessible, and easy to maintain like a production app, even if it’s just for me.
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- **React + Vite** for speed and modularity  
+- **Tailwind CSS** to stay efficient with styling  
+- **React Router** for page transitions  
+- **GitHub Pages** for simple, no-fuss deployment  
+- **ESLint + Prettier + Husky** to keep the codebase tidy  
 
-### `npm start`
+## What Makes This Site Different
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Component-based layout**  
+  Everything’s broken into small, focused components. Easy to update, reuse, or replace without breaking anything else.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Instant dev feedback**  
+  Vite’s hot reload is ridiculously fast. Makes building and testing changes feel frictionless.
 
-### `npm test`
+- **Fully responsive**  
+  Built mobile-first, with clean breakpoints and flexible layouts that hold up across devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Accessible and semantic**  
+  ARIA tags and semantic HTML are baked in. I wanted this site to be usable for everyone, not just visually polished.
 
-### `npm run build`
+- **No dark mode... yet**  
+  It’s something I’ve been meaning to build in. I’m thinking Tailwind’s `dark:` classes or a custom toggle with `localStorage` support could do the trick.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Why This Matters (Especially if You Manage Engineers)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I treated this like a real-world app:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **It’s scalable.** The structure can grow with more content or features without becoming a mess.  
+- **It’s maintainable.** Clear file naming, scoped components, and helpful tooling make it easy to pick up or hand off.  
+- **It’s clean.** Pre-push hooks, linters, and formatters run automatically so bad code doesn’t make it in.  
 
-### `npm run eject`
+## What’s Next
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This is a living project. I plan to experiment with:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Automated Lighthouse performance reports  
+- A backend for the contact form (probably Supabase or Firebase)  
+- Animations and transitions using Framer Motion  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for checking it out! Feel free to fork, clone, or reach out if you have questions or feedback.
