@@ -9,7 +9,7 @@ export default function Resume() {
           Curious about my background? Here's a quick overview.
         </p>
         <a
-          href="/assets/Data_Engineer_Sermini_Kayla.pdf"
+          href="/assets/Kayla_Sermini_Engineer_Resume.pdf"
           download
           className="resume-button"
         >
