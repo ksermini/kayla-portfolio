@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base reset + typography ---------- */
+@layer base {
+  :root {
+    --ring: 0 0% 0%; /* black ring like Apple focus outline */
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-900 antialiased;
+  }
+
+  /* Headings: crisp, slightly tighter tracking */
+  h1,h2,h3,h4 {
+    @apply font-semibold tracking-tight text-neutral-900;
+  }
+
+  a {
+    @apply underline-offset-4 decoration-neutral-300 hover:decoration-neutral-600 transition-colors;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px hsl(var(--ring) / 0.06);
+  }
+}
+
+/* ---------- App primitives (cards, buttons, badges) ---------- */
+@layer components {
+  .container-app {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .app-shell {
+    @apply min-h-full flex flex-col;
+  }
+
+  .nav {
+    @apply sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-neutral-200/70;
+  }
+
+  .nav-inner {
+    @apply container-app h-14 flex items-center justify-between;
+  }
+
+  .card {
+    @apply rounded-2xl border border-neutral-200 bg-white shadow-[0_1px_1px_rgba(0,0,0,0.04)];
+  }
+
+  .card-pad {
+    @apply p-5 sm:p-6;
+  }
+
+  .muted {
+    @apply text-neutral-600;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-medium
+           transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10;
+  }
+
+  .btn-primary {
+    @apply btn bg-black text-white hover:bg-neutral-800 active:bg-neutral-900;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-neutral-900 hover:bg-neutral-100;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full border border-neutral-200 bg-white px-2.5 py-1 text-xs font-medium text-neutral-700;
+  }
+
+  .section {
+    @apply container-app py-10 sm:py-12;
+  }
+
+  .grid-cards {
+    @apply grid gap-5 sm:gap-6 md:grid-cols-2;
+  }
+}
+
+/* ---------- “Prose” tweaks for readable long text (case studies) ---------- */
+@layer utilities {
+  .prose-apple :where(h1,h2,h3) {
+    @apply scroll-mt-24;
+  }
+  .prose-apple p {
+    @apply leading-7 text-neutral-800;
+  }
+  .prose-apple ul {
+    @apply list-disc pl-6 space-y-1;
+  }
+  .prose-apple code {
+    @apply rounded-md bg-neutral-100 px-1.5 py-0.5 text-[0.925em];
+  }
+}
