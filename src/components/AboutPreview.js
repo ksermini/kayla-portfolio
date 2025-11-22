@@ -1,10 +1,11 @@
-// AboutPreview.js
 export default function AboutPreview() {
     return (
       <section className="section-container about-preview">
         <h2>About Me</h2>
         <p>
-          I’m a data engineer with a business edge, building modular systems that scale. From financial compliance to quant strategies, I design with purpose.
+         I build AI systems the right way—domain-driven, human-centric, and grounded 
+        in clean data foundations. I focus on fixing root causes, standardizing 
+        DevOps, and designing architectures teams can trust.
         </p>
         <a href="/About/About#/about">Read Full Story</a>
       </section>

@@ -3,46 +3,35 @@ import React from "react";
 export default function LandingTopics() {
   const topics = [
     {
-      title: "CI/CD: Why consistency beats chaos",
+      title: "AI Application Blueprint",
       blurb:
-        "From automatic semantic versioning to Azure DevOps, I’ve built pipelines that don’t just deploy code — they build confidence.",
-      tags: ["Azure DevOps", "PowerShell", "Python"],
+        "How I design AI systems end-to-end: from the business problem to domains, data flows, evaluation, and human-in-the-loop guardrails.",
+      tags: ["Architecture", "AI Systems", "Human-in-the-Loop"],
     },
     {
-      title: "Low Code / No Code: Scaling without hand-coding",
+      title: "Domain-Driven Architecture",
       blurb:
-        "I architected a low-code ETL framework that eliminated repetitive scripting while keeping full flexibility.",
-      tags: ["Python", "YAML", "SQLAlchemy"],
+        "I map real business language into software boundaries. Clear domains and bounded contexts prevent chaotic data and random AI endpoints.",
+      tags: ["DDD", "Bounded Contexts", "Ubiquitous Language"],
     },
     {
-      title: "PowerShell: My unlikely favorite tool",
+      title: "Root-Cause First, Not Model First",
       blurb:
-        "It's not flashy, but it gets the job done. PowerShell became my go-to for CI/CD scripting and automation.",
-      tags: ["PowerShell", "CI CD"],
+        "Most AI issues aren’t model failures — they’re data, workflow, or ownership failures. I fix the foundation before layering AI on top.",
+      tags: ["Data Quality", "Process Design", "Observability"],
     },
     {
-      title: "SDLC: The system that runs the system",
+      title: "DevOps & Standards for AI",
       blurb:
-        "I live and breathe clean architecture, because clean processes produce clean code.",
-      tags: ["Confluence", "Git", "Lucid"],
-    },
-    {
-      title: "Mentorship & Culture: Why I Lead by Example",
-      blurb:
-        "As a former team captain, I bring competitive energy into every dev room. Culture isn't extra, it's the foundation.",
-      tags: ["Leadership", "Culture", "Mentorship"],
-    },
-    {
-      title: "Designing for Tim in Treasury",
-      blurb:
-        "If you don’t know what Tim waits an hour for every morning, how do you build something useful? I care about real pain points.",
-      tags: ["User Empathy", "Systems Thinking", "Business Context"],
+        "Before building AI features, I standardize environments, CI/CD, versioning, and rollouts. Reliable systems beat clever prototypes.",
+      tags: ["CI/CD", "Environments", "Governance"],
     },
   ];
 
+
   return (
     <div className="topics-section">
-    <h2>What I Talk About</h2>
+    <h2>How I Think</h2>
     <div className="topics-grid">
         {topics.map((topic, idx) => (
         <div className="topic-card" key={idx}>

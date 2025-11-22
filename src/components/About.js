@@ -35,97 +35,93 @@ export default function About() {
 
       <h1 className="about-title">About Me</h1>
       <p className="about-intro">
-        I’m Kayla — a FinTech data engineer with a passion for modular systems,
-        automation that matters, and writing code that people actually enjoy
-        working with.
+        I’m Kayla — an AI engineer who likes architecture clean, systems predictable, and automation meaningful. I design AI and data platforms the same way I write code: modular, thoughtful, and something people won’t curse at six months later.
       </p>
 
       <div className="about-cards">
         <div className="about-card reveal">
           <h2 className="about-subheading">Who I Am</h2>
           <p>
-            While others got bedtime stories, I got design patterns. I'm the
-            kind of person who asks why, how, and “what’s the uptime?” — all
-            before coffee. I build modular ETL frameworks, DevOps pipelines that
-            don’t flinch under pressure, and low-code systems that actually
-            ship.
+            I’m someone who thinks in systems first.
+            I care about boundaries, domains, and designing workflows that make sense to the humans who use them.
+            I solve problems by simplifying them: clean patterns, clear contracts, and code that teams actually want to maintain.
           </p>
         </div>
 
         <div className="about-card reveal">
-          <h2 className="about-subheading">How It Started</h2>
+          <h2 className="about-subheading">How I Think About AI</h2>
           <p>
-            My dad’s a senior architect. So naturally, I rebelled... by becoming
-            a data engineer. I tried dodging tech — sampled majors like
-            appetizers, got a front-end dev cert “for fun,” earned a
-            pen-testing cert out of curiosity, and finally landed in CIS.
-            Cybersecurity sounded cool until I heard “you won’t be coding much
-            here.” So I built everything I could.
+           I like AI that’s grounded in reality.
+           AI that understands the business language, works inside real constraints, and helps people make better decisions.
+            I don’t chase model hype.
+            I build the foundations that make AI trustworthy, observable, and actually usable.
           </p>
         </div>
 
         <div className="about-card reveal">
-          <h2 className="about-subheading">What I Work On</h2>
+          <h2 className="about-subheading">Core Principles That Beat AI Every Time</h2>
           <ul className="about-list">
             <li>
-              Built a low-code ETL framework that lets teams launch pipelines
-              without touching core logic
+              Strong domains beat strong models, bounded contexts prevent 90% of downstream issues
             </li>
             <li>
-              Led CI/CD standardization across 5 tech stacks using Azure DevOps
-              with semantic versioning and artifact control
+              Clean architecture beats clever prototypes, separation of concerns is the real velocity
             </li>
             <li>
-              Wrote modular Python that actually made onboarding... enjoyable
+              Observability beats assumptions: logs, metrics, and traces reveal truth early
             </li>
             <li>
-              Replaced manual workflows with automation across compliance, data
-              ingestion, and scheduling
+              Governance beats guesswork: access, lineage, and lifecycle reduce systemic risk
             </li>
             <li>
-              Building a Monte Carlo Option Pricing Engine in C++
+              Config-driven frameworks that keep teams out of repetitive, soul-crushing code
             </li>
             <li>
-              Exploring quant strategy development and financial modeling with
-              Python
+              Modular AI and data systems that don’t break when someone sneezes
             </li>
           </ul>
         </div>
 
         <div className="about-card reveal">
-          <h2 className="about-subheading">What I Believe</h2>
+          <h2 className="about-subheading">What I Build</h2>
           <ul className="about-list">
             <li>
-              Systems should be clean, modular, and resilient — not duct-taped
-              together
+             Fix root causes, not symptoms
+            <li>
+              Make systems predictable
             </li>
             <li>
-              Code should solve real pain points — like Tim in Treasury’s 1-hour
-              load times
+              Make architecture obvious
             </li>
             <li>
-              Documentation is a love letter to your future self (and your team)
+              Build for the humans who actually use the thing
             </li>
-            <li>DevOps isn’t a toolset — it’s a mindset</li>
-            <li>Mentorship is engineering in human form</li>
-            <li>Culture is core architecture — not a perk</li>
+            <li>
+              Automate the boring parts
+            </li>
+            <li>Write documentation like someone will read it</li>
           </ul>
         </div>
 
         <div className="about-card reveal">
-          <h2 className="about-subheading">What I’m Learning</h2>
+          <h2 className="about-subheading">Why Foundations Matter More Than Models</h2>
           <p>
-            Right now, I’m neck-deep in C++, options math, and scalable systems
-            for quant strategies. I’m diving into finance modeling — not because
-            I have to, but because I *want* to.
+            I’ve learned that most problems aren’t “AI problems.” They’re data issues, unclear ownership, missing standards, or workflows that make no sense. I focus on the architecture and processes that prevent the fire drill in the first place, because clean foundations beat clever patches every time.
+          </p>
+        </div>
+
+        
+        <div className="about-card reveal">
+          <h2 className="about-subheading">What I’m Learning Next</h2>
+          <p>
+            Right now I’m deepening my work in AI product patterns, evaluation frameworks, and quant-inspired modeling. I like challenges that stretch both the math side and the architecture side of my brain, so I’m always building something new.          
           </p>
         </div>
 
         <div className="about-card reveal">
           <h2 className="about-subheading">Let’s Connect</h2>
           <p>
-            If you’ve made it this far, you’re probably someone who writes clean
-            commit messages and reads docs for fun. Let’s debug life together.
+           If you love talking about clean systems, AI that’s actually useful, or the joy of deleting 300 lines of code because a config file does it better, we’ll get along great.
           </p>
         </div>
       </div>

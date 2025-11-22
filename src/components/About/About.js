@@ -32,28 +32,32 @@ const About = () => {
     show: { opacity: 1, y: 0 },
   };
 
-  const timelineEvents = [
-    {
-      title: 'Early Exposure',
-      description: 'My dad’s a senior architect. So naturally, I rebelled... by becoming a data engineer.',
-    },
-    {
-      title: 'Education-as-a-Sampler',
-      description: 'Majors? Sampled them like tapas. Got a front-end dev cert for fun, and earned a pen-testing cert because why not? Eventually, I landed in Computer Information Systems and realized: Wait, I actually love building stuff that works.',
-    },
-    {
-      title: 'Finding My Path',
-      description: 'I started out chasing a cybersecurity path — fresh off a pen-testing cert in Python and ready to hack the planet. Then someone said, “You won’t be coding much here.” So I pivoted hard. Now I design and build low-code and no-code frameworks from the ground up. At this point, I am the framework.',
-    },
-  ];
+const timelineEvents = [
+  {
+    title: 'Seeing the Cracks',
+    description:
+      'I started in financial crimes and lending, watching teams fight fragile SSIS jobs, manual reconciliations, and hero-mode debugging at 7 AM. The pattern was always the same: tools changed, but the underlying chaos didn’t.'
+  },
+  {
+    title: 'From Scripts to Systems',
+    description:
+      'Instead of writing “one more pipeline,” I started building low-code ETL frameworks, standardized CI/CD, and shared patterns. The goal stopped being “ship the job” and became “fix the way we ship jobs.”'
+  },
+  {
+    title: 'AI After the Foundations',
+    description:
+      'When AI entered the picture, it was obvious: without clean domains, governed data, and stable DevOps, AI would just amplify existing issues. That’s how I ended up focused on AI application architecture, not just prompts.'
+  }
+];
+
 
   const beliefs = [
-    'Systems should be elegant, not duct-taped.',
-    'Code should solve real pain points — like Tim in Treasury’s 1-hour data load.',
-    'Documentation is a love letter to your future self.',
-    'DevOps isn’t a toolset. It’s a mindset.',
-    'Mentorship is engineering, but for people.',
-    'Culture is core architecture, not an afterthough',
+    'Designing AI application “textbooks” — end-to-end documents that define domains, flows, guardrails, and failure modes before anyone wires up an LLM.',
+  'Standardizing CI/CD, release patterns, and observability so every new service behaves like it belongs to the same ecosystem.',
+  'Turning vague business asks into domain models, APIs, and contracts that make cross-team work predictable instead of political.',
+  'Refactoring ETL from ad hoc scripts into config-driven, domain-aligned pipelines with clear ownership and metadata.',
+  'Embedding human-in-the-loop review points into AI workflows, so subject-matter experts stay in charge of final decisions.',
+  'Building logging and telemetry patterns that treat AI calls like serious production dependencies, not magic boxes.'
   ];
 
   useEffect(() => {
@@ -82,22 +86,19 @@ const About = () => {
 
       <h1 className="about-title">About Me</h1>
       <p className="about-intro">
-        I’m Kayla, A FinTech data engineer who believes clean code is self-care, and automation should actually make things easier (wild, I know). I’m obsessed with building modular systems, automating away the boring stuff, and writing Python that doesn’t make future-you cry.
+        I’m Kayla — an AI engineer in banking who cares more about the foundations than the headlines. I design domain-driven data and AI systems, fix root causes instead of symptoms, and standardize the “boring” parts of engineering so teams can ship trustworthy AI instead of one-off demos.
       </p>
 
       <SectionCard title="Who I Am">
         <p>
-        Other kids got bedtime stories — I got architecture diagrams and lectures on clean design. Fast-forward: I’m the kind of person who asks why, how, and “what’s the uptime?” before I’ve even had coffee.
+        I’m the person in the room asking, “What problem are we actually solving?” before a single line of code gets written.
+        I like AI, but I love clean architecture, stable pipelines, and humans who are not drowning in manual work.
 
-        I build things that work and scale:
-
-        Modular ETL frameworks that onboard new data sources without a code rewrite.
-
-        CI/CD pipelines across 5 tech stacks that don’t flinch under pressure.
-
-        DevOps workflows that actually... flow.
-
-        Also: I write documentation like it’s going in a time capsule. Because future-you deserves better.
+        My sweet spot is designing systems that:
+        <br /><br />
+        • Turn messy business processes into clear domains and contracts.<br />
+        • Make data and AI behavior observable, not mysterious.<br />
+        • Feel boring in production — because they just work.
         </p>
       </SectionCard>
 
@@ -106,7 +107,7 @@ const About = () => {
       </SectionCard>
 
       <SectionCard title="What I Work On">
-        <h2>Modular systems. Clean pipelines. Real-world impact.</h2>
+        <h2>AI applications built on boring, reliable foundations.</h2>
         <div className="carousel-container">
           <button className="carousel-button left" onClick={scrollLeft}>‹</button>
 
@@ -153,13 +154,13 @@ const About = () => {
           <pre>
             <code>
               - Currently diving into:<br />
-              - C++ memory management (because masochism builds character)<br />
-              - Monte Carlo simulations<br />
-              - Options pricing engines<br />
-              - Alpha modeling + quant strategy dev<br />
+              - AI application architectures and domain-driven design for LLM systems<br />
+              - Evaluation, telemetry, and feedback loops for AI in production<br />
+              - Vectorization strategies and retrieval patterns for governed data platforms<br />
+              - Multi-agent and orchestration patterns that respect real-world constraints<br />
               <br />
-              Curiosity is the compiler.<br />
-              Discipline is the runtime.
+              Because tools will change.<br />
+              Principles, patterns, and clean boundaries are what actually last.
             </code>
           </pre>
         </div>
